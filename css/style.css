@@ -34,6 +34,22 @@ Version: 1.0
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'robotoslab_regular';
+    src: url('../fonts/robotoslab-regular-webfont.woff2') format('woff2'),
+        url('../fonts/robotoslab-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoslab_thin';
+    src: url('../fonts/robotoslab-thin-webfont.woff2') format('woff2'),
+        url('../fonts/robotoslab-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /* ==========================
    Background Color
    ========================== */
@@ -53,18 +69,21 @@ Version: 1.0
    Theme Custom CSS
    ========================== */
 body,p,h1,h2,h3,h4,h5,h6,li,div,p,a{
-    font-family: 'open_sansregular', sans-serif;
+    font-family: 'open_sansregular';
     color: #9da5b0;
 }
 h1{
+    font-family: 'open_sanslight';
     font-weight: 300;
     margin-top: 0;
 }
 h2{
+    font-family: 'open_sanslight';
     font-weight: 300;
     margin-top: 0;
 }
 h3{
+    font-family: 'open_sanslight';
     font-weight: 300;
     margin-top: 0;
 }
@@ -119,8 +138,8 @@ img{
     background-color: #232831!important;
 }
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover{
-    color: #36a78f!important;
     background: transparent;
+    color: #36a78f!important;
 }
 .navbar-default .navbar-nav > li > a,.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:focus{
     color: #ffffff;
@@ -209,10 +228,15 @@ img{
     margin-top: 60px;
 }
 
+
 /* ==========================
    What We Do Area
    ========================== */
+.feature-text > h4{
+    font-family: 'open_sanslight';
+}
 .feature-text > p{
+    font-family: 'open_sansregular';
     margin-bottom: 20px;
 }
 .mobile-image{
@@ -274,6 +298,9 @@ img{
     -moz-animation-delay: 0.4s; 
     animation-delay: 0.4s;
 }
+.service-box > h3{
+    font-family: 'open_sansregular';
+}
 .service-box > h3, .service-box > i{
     color: #b5bbc2;
     display: block;
@@ -282,6 +309,7 @@ img{
     text-align: center;
 }
 .service-box > p{
+    font-family: 'open_sanslight';
     color: #9da5b0;
     text-align: center;
 }
@@ -315,8 +343,8 @@ img{
     margin-bottom: 5px;
     margin-top: 10px;
 }
-.blog-post > .btn.custom-btn{
-    margin-top: 30px;
+.blog-post > p{
+    margin-bottom: 50px;
 }
 .blog-post{
     margin-bottom: 30px;
@@ -348,6 +376,7 @@ img{
     padding: 18px;
 }
 .package-price{
+    font-family: 'robotoslab_regular';
     background-color: #2b303b;
     display: block;
     font-size: 36px; 
@@ -356,10 +385,12 @@ img{
     text-align: center;
 }
 .package-price > span{
+    font-family: 'robotoslab_thin';
     font-size: 16px; 
     font-weight: 300;
 }
 .package-price > sub{
+    font-family: 'robotoslab_regular';
     font-size: 24px;
     font-weight: normal;
     margin-right: 3px;
@@ -377,6 +408,7 @@ img{
     padding-left: 0;
 }
 .package-content > ul > li{
+    font-family: 'open_sanslight';
     color: #ffffff;
     font-size: 14px;
     line-height: 32px;
@@ -412,6 +444,9 @@ img{
 }
 .footer-widget > .footer-widget-title > h4, .footer-widget > .footer-widget-content > p, .footer-widget-content > li{
     color: #f6f7fa;
+}
+.footer-widget-title > h4{
+    font-family: 'open_sanssemibold';
 }
 .footer-widget-content > ul{
     list-style: outside none none;
@@ -492,6 +527,7 @@ img{
     .slider-text{
         padding: 50px 0;
     }
+
     .slider-heading, .slider-area > p{
         padding-bottom: 5px;
     }
